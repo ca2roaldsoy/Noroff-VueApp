@@ -6,7 +6,6 @@
 
 <script>
 
-
 import PuppyRecipePage from "./PuppyRecipePage.vue"
     
 export default {
@@ -19,7 +18,3 @@ export default {
 
 }
 </script>
-
-<style>
-
-</style>

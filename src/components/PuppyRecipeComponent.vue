@@ -1,16 +1,18 @@
 <template>
-     <div class="card-group">
         <div class="card">
-           <div class="col-sm-12">
-               <img class="card-img-top" :src="recipe_img" alt="recipe image">
+          <div class="row no-gutters">
+           <div class="col-sm-4">
+               <img class="card-img" :src="recipe_img" alt="recipe image">
+            </div>
+               <div class="col-sm-8">
                <div class="card-body">
                    <h3 class="card-title">{{ title }}</h3>
                    <p class="card-text">{{ ingredients }}</p>
                    <a :href="website" target="_blank">More Info</a>
                </div>
            </div>
+          </div>
         </div>
-    </div>
 </template>
 
 <script>
@@ -23,5 +25,17 @@ export default {
 
 
 <style scoped>
+    
+    img {
+        
+        padding: 25px 10px 10px 10px;
+        border-radius: 10px;
+        
+    }
+    
+    .card {
+        
+        margin: 10px;
+    }
 
 </style>

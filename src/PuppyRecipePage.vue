@@ -1,7 +1,7 @@
 <template>
     
-    <div class="card">
-        <div v-for="recipe in recipes" class="col-sm-4" :key="recipe.title">
+    <div class="card-group">
+        <div v-for="recipe in recipes" class="col-sm-12 col-lg-4" :key="recipe.title">
             
             <PuppyRecipeComponent
                 
@@ -47,7 +47,6 @@
             .then((res) => {
                
                 app.recipes = res.results
-               //console.log(app.recipes)
                
             })
         }
