@@ -1,8 +1,8 @@
 <template>
-     <div class="card">
-        <div class="row">
+     <div class="card-group">
+        <div class="card">
            <div class="col-sm-12">
-               <img class="card-img-top" :src="recipe_img" :alt="recipe image">
+               <img class="card-img-top" :src="recipe_img" alt="recipe image">
                <div class="card-body">
                    <h3 class="card-title">{{ title }}</h3>
                    <p class="card-text">{{ ingredients }}</p>
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: 'Recipes',
+  name: 'PuppyRecipeComponent',
   props: ["recipe_img", "title", "ingredients", "website"]
 
 }
